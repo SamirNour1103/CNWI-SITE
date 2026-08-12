@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enciclopédia Minecraft</title>
+    <link rel="stylesheet" href="../cnw-site/css/mine.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">⛏ MINECRAFT ENCICLOPÉDIA</div>
+
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#blocos">Blocos</a>
+        <a href="#mobs">Mobs</a>
+        <a href="#itens">Itens</a>
+        <a href="#biomas">Biomas</a>
+        <a href="#dimensoes">Dimensões</a>
+    </nav>
+    <nav>
+    <ul>
+        <li><a href="ben.html">Ben 10</a></li>
+        <li><a href="aranha.html">Spider-Man: Aranhaverso</a></li>
+    </ul>
+</nav>
+</header>
+
+<section class="hero" id="inicio">
+    <div class="hero-content">
+        <span class="tag">ENCICLOPÉDIA MINECRAFT</span>
+
+        <h1>MINE<span>PÉDIA</span></h1>
+
+        <p>
+            Explore informações sobre blocos, mobs, itens,
+            biomas e dimensões do Minecraft.
+        </p>
+    </div>
+</section>
+
+<section class="categorias">
+
+    <h2>Explore o Minecraft</h2>
+    <p>Escolha uma categoria</p>
+
+    <div class="categoria-grid">
+
+        <button onclick="irPara('blocos')">
+            <span>🧱</span>
+            <strong>Blocos</strong>
+            <small>Materiais e construção</small>
+        </button>
+
+        <button onclick="irPara('mobs')">
+            <span>👾</span>
+            <strong>Mobs</strong>
+            <small>Criaturas do mundo</small>
+        </button>
+
+        <button onclick="irPara('itens')">
+            <span>💎</span>
+            <strong>Itens</strong>
+            <small>Objetos e equipamentos</small>
+        </button>
+
+        <button onclick="irPara('biomas')">
+            <span>🌎</span>
+            <strong>Biomas</strong>
+            <small>Ambientes do mundo</small>
+        </button>
+
+        <button onclick="irPara('dimensoes')">
+            <span>🔥</span>
+            <strong>Dimensões</strong>
+            <small>Overworld, Nether e End</small>
+        </button>
+
+    </div>
+</section>
+
+<section class="conteudo" id="blocos">
+
+    <div class="titulo-secao">
+        <span>🧱 CATEGORIA</span>
+        <h2>Blocos</h2>
+        <p>Materiais que formam o mundo de Minecraft.</p>
+    </div>
+
+    <div class="cards">
+
+        <article class="card" data-nome="terra dirt">
+            <div class="imagem bloco">
+                <img src="https://minecraft.wiki/images/Dirt_JE2_BE2.png" alt="Terra">
+            </div>
+
+            <div class="card-info">
+                <span>Bloco</span>
+                <h3>Terra</h3>
+
+                <p>
+                    Um dos blocos mais comuns do Mundo Superior.
+                    Pode ser encontrado em diversos terrenos.
+                </p>
+
+                <div class="informacoes">
+                    <strong>⛏ Ferramenta</strong>
+                    Pá
+
+                    <strong>📍 Encontrado</strong>
+                    Mundo Superior
+                </div>
+            </div>
+        </article>
+
+        <article class="card" data-nome="pedra stone">
+            <div class="imagem bloco">
+                <img src="https://minecraft.wiki/images/Stone_JE3_BE2.png" alt="Pedra">
+            </div>
+
+            <div class="card-info">
+                <span>Bloco</span>
+                <h3>Pedra</h3>
+
+                <p>
+                    Um dos blocos mais comuns encontrados
+                    no subsolo.
+                </p>
+
+                <div class="informacoes">
+                    <strong>⛏ Ferramenta</strong>
+                    Picareta
+
+                    <strong>📍 Encontrado</strong>
+                    Subsolo
+                </div>
+            </div>
+        </article>
+
+        <article class="card" data-nome="obsidiana obsidian">
+            <div class="imagem bloco">
+                <img src="https://minecraft.wiki/images/Obsidian_JE3_BE2.png" alt="Obsidiana">
+            </div>
+
+            <div class="card-info">
+                <span>Bloco</span>
+                <h3>Obsidiana</h3>
+
+                <p>
+                    Bloco extremamente resistente,
+                    utilizado principalmente em portais.
+                </p>
+
+                <div class="informacoes">
+                    <strong>⛏ Ferramenta</strong>
+                    Picareta de diamante ou superior
+
+                    <strong>🔥 Uso</strong>
+                    Portal do Nether
+                </div>
+            </div>
+        </article>
+
+        <article class="card" data-nome="areia sand">
+            <div class="imagem bloco">
+                <img src="https://minecraft.wiki/images/Sand_JE5_BE3.png?ae2df" alt="Areia">
+            </div>
+
+            <div class="card-info">
+                <span>Bloco</span>
+                <h3>Areia</h3>
+
+                <p>
+                    Encontrada principalmente em desertos,
+                    praias e regiões próximas à água.
+                </p>
+
+                <div class="informacoes">
+                    <strong>⛏ Ferramenta</strong>
+                    Pá
+
+                    <strong>🔥 Uso</strong>
+                    Produção de vidro
+                </div>
+            </div>
+        </article>
+
+        <article class="card" data-nome="pedregulho cobblestone">
+            <div class="imagem bloco">
+                <img src="https://minecraft.wiki/images/Cobblestone_JE5_BE3.png?25024" alt="Pedregulho">
+            </div>
+
+            <div class="card-info">
+                <span>Bloco</span>
+                <h3>Pedregulho</h3>
+
+                <p>
+                    Material bastante utilizado nas primeiras
+                    construções e receitas.
+                </p>
+
+                <div class="informacoes">
+                    <strong>⛏ Ferramenta</strong>
+                    Picareta
+
+                    <strong>📍 Encontrado</strong>
+                    Subsolo
+                </div>
+            </div>
+        </article>
+
+        <article class="card" data-nome="bloco de diamante diamond block">
+            <div class="imagem bloco">
+                <img src="https://minecraft.wiki/images/Block_of_Diamond_JE5_BE3.png?542ee" alt="Bloco de Diamante">
+            </div>
+
+            <div class="card-info">
+                <span>Bloco</span>
+                <h3>Bloco de Diamante</h3>
+
+                <p>
+                    Bloco criado com nove diamantes.
+                    Também serve para armazenar diamantes.
+                </p>
+
+                <div class="informacoes">
+                    <strong>💎 Material</strong>
+                    Diamante
+
+                    <strong>🔨 Receita</strong>
+                    9 diamantes
+                </div>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<section class="conteudo escuro" id="mobs">
+
+    <div class="titulo-secao">
+        <span>👾 CATEGORIA</span>
+        <h2>Mobs</h2>
+        <p>Criaturas encontradas no mundo de Minecraft.</p>
+    </div>
+
+    <div class="cards">
+
+        <article class="card" data-nome="creeper">
+            <div class="imagem mob">
+                <img src="https://minecraft.wiki/images/thumb/Creeper_JE3_BE1.png/150px-Creeper_JE3_BE1.png?40005" alt="Creeper">
+            </div>
+
+            <div class="card-info">
+                <span>Hostil</span>
+                <h3>Creeper</h3>
+
+                <p>
+                    Uma das criaturas mais conhecidas de Minecraft.
+                    Pode explodir quando se aproxima do jogador.
+                </p>
+
+                <div class="informacoes">
+                    <strong>❤️ Vida</strong>
+                    20
+
+                    <strong>🎁 Drop</strong>
+                    Pólvora
+                </div>
+            </div>
+        </article>
+
+        <article class="card" data-nome="zumbi zombie">
+            <div class="imagem mob">
+                <img src="https://minecraft.wiki/images/thumb/Zombie_JE5_BE2.png/150px-Zombie_JE5_BE2.png?d709c" alt="Zumbi">
+            </div>
+
+            <div class="card-info">
+                <span>Hostil</span>
+                <h3>Zumbi</h3>
+
+                <p>
+                    Criatura hostil que aparece principalmente
+                    em locais escuros.
+                </p>
+
+                <div class="informacoes">
+                    <strong>❤️ Vida</strong>
+                    20
+
+                    <strong>🎁 Drop</strong>
+                    Carne podre
+                </div>
+            </div>
+        </article>
+
+        <article class="card" data-nome="esqueleto skeleton">
+            <div class="imagem mob">
+                <img src="https://minecraft.wiki/images/Skeleton_JE6_BE4.png" alt="Esqueleto">
+            </div>
+
+            <div class="card-info">
+                <span>Hostil</span>
+                <h3>Esqueleto</h3>
+
+                <p>
+                    Criatura que utiliza arco e flechas
+                    para atacar jogadores.
+                </p>
+
+                <div class="informacoes">
+                    <strong>❤️ Vida</strong>
+                    20
+
+                    <strong>🏹 Arma</strong>
+                    Arco
+                </div>
+            </div>
+        </article>
+
+        <article class="card" data-nome="enderman">
+            <div class="imagem mob">
+                <img src="https://minecraft.wiki/images/thumb/Enderman_JE3.png/272px-Enderman_JE3.png?c6308" alt="Enderman">
+            </div>
+
+            <div class="card-info">
+                <span>Neutro</span>
+                <h3>Enderman</h3>
+
+                <p>
+                    Criatura alta capaz de se teletransportar
+                    pelo mundo.
+                </p>
+
+                <div class="informacoes">
+                    <strong>❤️ Vida</strong>
+                    40
+
+                    <strong>🎁 Drop</strong>
+                    Pérola do Ender
+                </div>
+            </div>
+        </article>
+
+        <article class="card" data-nome="warden">
+            <div class="imagem mob">
+                <img src="https://minecraft.wiki/images/Warden_JE1_BE1.png" alt="Warden">
+            </div>
+
+            <div class="card-info">
+                <span>Hostil</span>
+                <h3>Warden</h3>
+
+                <p>
+                    Criatura extremamente poderosa encontrada
+                    no bioma Deep Dark.
+                </p>
+
+                <div class="informacoes">
+                    <strong>❤️ Vida</strong>
+                    500
+
+                    <strong>📍 Local</strong>
+                    Deep Dark
+                </div>
+            </div>
+        </article>
+
+        <article class="card" data-nome="vaca cow">
+            <div class="imagem mob">
+                <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/5/5e/Cow_JE5_BE2.png/revision/latest?cb=20240729214026" alt="Vaca">
+            </div>
+
+            <div class="card-info">
+                <span>Passivo</span>
+                <h3>Vaca</h3>
+
+                <p>
+                    Animal passivo que fornece couro
+                    e carne.
+                </p>
+
+                <div class="informacoes">
+                    <strong>❤️ Vida</strong>
+                    10
+
+                    <strong>🎁 Drop</strong>
+                    Couro e carne
+                </div>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<section class="conteudo" id="itens">
+
+    <div class="titulo-secao">
+        <span>💎 CATEGORIA</span>
+        <h2>Itens</h2>
+        <p>Objetos e recursos importantes para sua aventura.</p>
+    </div>
+
+    <div class="cards">
+
+        <article class="card" data-nome="diamante diamond">
+            <div class="imagem item">
+                <img src="https://minecraft.wiki/images/Diamond_JE3_BE3.png" alt="Diamante">
+            </div>
+
+            <div class="card-info">
+                <span>Recurso</span>
+                <h3>Diamante</h3>
+
+                <p>
+                    Recurso raro utilizado para fabricar
+                    ferramentas, armas e armaduras.
+                </p>
+
+                <div class="informacoes">
+                    <strong>💎 Tipo</strong>
+                    Recurso
+
+                    <strong>⛏ Uso</strong>
+                    Equipamentos
+                </div>
+            </div>
+        </article>
+
+        <article class="card" data-nome="tocha torch">
+            <div class="imagem item">
+                <img src="https://minecraft.wiki/images/Torch.gif?8e1d4" alt="Tocha">
+            </div>
+
+            <div class="card-info">
+                <span>Utilidade</span>
+                <h3>Tocha</h3>
+
+                <p>
+                    Fonte de luz utilizada para iluminar
+                    cavernas e construções.
+                </p>
+
+                <div class="informacoes">
+                    <strong>🔥 Receita</strong>
+                    Carvão + Graveto
+
+                    <strong>💡 Uso</strong>
+                    Iluminação
+                </div>
+            </div>
+        </article>
+
+        <article class="card" data-nome="balde bucket">
+            <div class="imagem item">
+                <img src="https://minecraft.wiki/images/Bucket_JE2_BE2.png" alt="Balde">
+            </div>
+
+            <div class="card-info">
+                <span>Utilidade</span>
+                <h3>Balde</h3>
+
+                <p>
+                    Item utilizado para transportar
+                    água, lava e outros líquidos.
+                </p>
+
+                <div class="informacoes">
+                    <strong>⚒ Receita</strong>
+                    3 lingotes de ferro
+
+                    <strong>💧 Uso</strong>
+                    Transporte de líquidos
+                </div>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<section class="conteudo escuro" id="biomas">
+
+    <div class="titulo-secao">
+        <span>🌎 CATEGORIA</span>
+        <h2>Biomas</h2>
+        <p>Ambientes encontrados no mundo de Minecraft.</p>
+    </div>
+
+    <div class="cards">
+
+        <article class="card" data-nome="planicie plains">
+            <div class="imagem bioma">
+                <img src="https://minecraft.wiki/images/Plains.png" alt="Planície">
+            </div>
+
+            <div class="card-info">
+                <span>Bioma</span>
+                <h3>Planície</h3>
+
+                <p>
+                    Bioma aberto e relativamente plano,
+                    ótimo para construções.
+                </p>
+            </div>
+        </article>
+
+        <article class="card" data-nome="deserto desert">
+            <div class="imagem bioma">
+                <img src="https://minecraft.wiki/images/Desert.png" alt="Deserto">
+            </div>
+
+            <div class="card-info">
+                <span>Bioma</span>
+                <h3>Deserto</h3>
+
+                <p>
+                    Bioma seco formado principalmente
+                    por areia e cactos.
+                </p>
+            </div>
+        </article>
+
+        <article class="card" data-nome="deep dark">
+            <div class="imagem bioma">
+                <img src="https://minecraft.wiki/images/Deep_Dark.png" alt="Deep Dark">
+            </div>
+
+            <div class="card-info">
+                <span>Bioma</span>
+                <h3>Deep Dark</h3>
+
+                <p>
+                    Bioma subterrâneo associado ao Warden
+                    e às Ancient Cities.
+                </p>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<section class="conteudo" id="dimensoes">
+
+    <div class="titulo-secao">
+        <span>🔥 CATEGORIA</span>
+        <h2>Dimensões</h2>
+        <p>Explore os diferentes mundos de Minecraft.</p>
+    </div>
+
+    <div class="cards">
+
+        <article class="card" data-nome="overworld mundo superior">
+            <div class="imagem dimensao">
+                <img src="https://preview.redd.it/the-overworld-still-lacks-depth-and-atmosphere-v0-k4fpd3d05yqg1.jpg?width=3240&format=pjpg&auto=webp&s=ec6e534249d9c4ae3c9d647402af9f49c11b76a1" alt="Mundo Superior">
+            </div>
+
+            <div class="card-info">
+                <span>Dimensão</span>
+                <h3>Mundo Superior</h3>
+
+                <p>
+                    A dimensão principal de Minecraft,
+                    com diversos biomas, estruturas,
+                    cavernas e oceanos.
+                </p>
+
+                <div class="informacoes">
+                    <strong>🌎 Nome</strong>
+                    Overworld
+
+                    <strong>🌱 Ambiente</strong>
+                    Diversos biomas
+                </div>
+            </div>
+        </article>
+
+        <article class="card" data-nome="nether">
+            <div class="imagem dimensao">
+                <img src="https://minecraft.wiki/images/Nether.png" alt="Nether">
+            </div>
+
+            <div class="card-info">
+                <span>Dimensão</span>
+                <h3>Nether</h3>
+
+                <p>
+                    Dimensão perigosa repleta de lava,
+                    fogo e criaturas exclusivas.
+                </p>
+
+                <div class="informacoes">
+                    <strong>🔥 Ambiente</strong>
+                    Quente e perigoso
+
+                    <strong>👹 Criaturas</strong>
+                    Piglins e Ghasts
+                </div>
+            </div>
+        </article>
+
+        <article class="card" data-nome="end">
+            <div class="imagem dimensao">
+                <img src="https://minecraft.wiki/images/The_End.png" alt="O End">
+            </div>
+
+            <div class="card-info">
+                <span>Dimensão</span>
+                <h3>O End</h3>
+
+                <p>
+                    Dimensão formada por ilhas no vazio,
+                    lar do Dragão Ender.
+                </p>
+
+                <div class="informacoes">
+                    <strong>🐉 Chefe</strong>
+                    Dragão Ender
+
+                    <strong>🟣 Ambiente</strong>
+                    Ilhas do End
+                </div>
+            </div>
+        </article>
+
+    </div>
+
+</section>
+<h2>imagens: minecraft wiki</h2>
+
+<footer>
+    <h2>⛏ MINEPÉDIA</h2>
+    <p>Enciclopédia não oficial de Minecraft. criada por Lucas Honorato Pereira</p>
+</footer>
+
+<script src="mine.js"></script>
+
+</body>
+</html>

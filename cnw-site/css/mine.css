@@ -1,0 +1,408 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eef1e9;
+    color: #202820;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    height: 70px;
+    padding: 0 7%;
+    background: #142016;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 4px solid #55a747;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 900;
+    color: white;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #66c356;
+}
+
+.hero {
+    min-height: 580px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 50px 20px;
+    background-image: url(https://i.redd.it/pp6lcb2wir941.png);
+}
+
+.hero-content {
+    width: 900px;
+}
+
+.tag {
+    color: #82d66e;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: clamp(55px, 10vw, 100px);
+    margin: 25px 0;
+    text-shadow: 7px 7px #132016;
+}
+
+.hero h1 span {
+    color: #69c557;
+}
+
+.hero p {
+    font-size: 19px;
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+.search {
+    width: min(700px, 100%);
+    margin: 35px auto;
+    display: flex;
+    background: white;
+    padding: 6px;
+    border: 4px solid #263327;
+    box-shadow: 0 6px #101710;
+}
+
+.search input {
+    flex: 1;
+    padding: 17px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.search button {
+    width: 60px;
+    border: none;
+    background: #55a747;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.categorias {
+    max-width: 1150px;
+    margin: auto;
+    padding: 90px 20px;
+    text-align: center;
+}
+
+.categorias h2 {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.categorias > p {
+    color: #777;
+    margin-bottom: 35px;
+}
+
+.categoria-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.categoria-grid button {
+    padding: 30px;
+    border: 3px solid #384438;
+    background: #f5f7f1;
+    text-align: left;
+    box-shadow: 0 6px #1d261e;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.categoria-grid button:hover {
+    transform: translateY(-5px);
+    border-color: #55a747;
+    box-shadow: 0 10px #1d261e;
+}
+
+.categoria-grid span {
+    display: block;
+    font-size: 38px;
+}
+
+.categoria-grid strong,
+.categoria-grid small {
+    display: block;
+    margin-top: 10px;
+}
+
+.categoria-grid small {
+    color: #777;
+}
+
+.conteudo {
+    padding: 100px 7%;
+    scroll-margin-top: 70px;
+}
+
+.conteudo.escuro {
+    background: #19271c;
+    color: white;
+}
+
+.titulo-secao {
+    max-width: 1150px;
+    margin: auto auto 40px;
+}
+
+.titulo-secao span {
+    color: #58aa49;
+    font-weight: bold;
+}
+
+.titulo-secao h2 {
+    font-size: 38px;
+    margin: 15px 0;
+}
+
+.titulo-secao p {
+    color: #777;
+}
+
+.escuro .titulo-secao p {
+    color: #aeb9ae;
+}
+
+.cards {
+    max-width: 1150px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    color: #222;
+    border: 3px solid #303a31;
+    box-shadow: 0 7px #111811;
+    transition: .2s;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+}
+
+.imagem {
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.imagem.bloco {
+    background:
+        repeating-linear-gradient(
+            0deg,
+            rgba(255,255,255,.06) 0px,
+            rgba(255,255,255,.06) 2px,
+            transparent 2px,
+            transparent 4px
+        ),
+        repeating-linear-gradient(
+            90deg,
+            rgba(0,0,0,.08) 0px,
+            rgba(0,0,0,.08) 2px,
+            transparent 2px,
+            transparent 4px
+        ),
+        #777;
+}
+
+.imagem.bloco img {
+    width: 145px;
+    height: 145px;
+    object-fit: contain;
+    image-rendering: pixelated;
+    transition: .25s;
+}
+
+.imagem.item {
+    background:
+        repeating-linear-gradient(
+            45deg,
+            #3c473c 0px,
+            #3c473c 12px,
+            #303a30 12px,
+            #303a30 24px
+        );
+}
+
+.imagem.item img {
+    width: 125px;
+    height: 125px;
+    object-fit: contain;
+    image-rendering: pixelated;
+    transition: .25s;
+}
+
+.imagem.mob {
+    background:
+        linear-gradient(
+            rgba(25,40,28,.12),
+            rgba(25,40,28,.12)
+        ),
+        #cbd3c7;
+}
+
+.imagem.mob img {
+    width: 160px;
+    height: 210px;
+    object-fit: contain;
+    image-rendering: pixelated;
+    transition: .25s;
+}
+
+.imagem.bioma {
+    height: 230px;
+    background: #273329;
+}
+
+.imagem.bioma img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imagem.dimensao {
+    height: 250px;
+    background: #111;
+}
+
+.imagem.dimensao img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    image-rendering: auto;
+    transition: .4s;
+}
+
+.card:hover .imagem.bloco img {
+    transform: scale(1.15);
+}
+
+.card:hover .imagem.item img {
+    transform: scale(1.15);
+}
+
+.card:hover .imagem.mob img {
+    transform: scale(1.08);
+}
+
+.card:hover .imagem.dimensao img {
+    transform: scale(1.05);
+}
+
+.card-info {
+    padding: 22px;
+}
+
+.card-info > span {
+    color: #55a747;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card h3 {
+    font-size: 23px;
+    margin: 10px 0;
+}
+
+.card p {
+    color: #707070;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.informacoes {
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+    color: #555;
+    line-height: 2;
+}
+
+.informacoes strong {
+    display: block;
+    color: #4e9142;
+}
+
+footer {
+    background: #101711;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+footer h2 {
+    margin-bottom: 15px;
+}
+
+footer p {
+    color: #999;
+}
+
+@media (max-width: 900px) {
+    nav {
+        display: none;
+    }
+
+    .categoria-grid,
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .categoria-grid,
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 50px;
+    }
+
+    .conteudo {
+        padding: 70px 20px;
+    }
+}
